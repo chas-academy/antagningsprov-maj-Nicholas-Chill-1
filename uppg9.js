@@ -1,4 +1,12 @@
-
+function sort(numbers) {
+    numbers.forEach(number => {
+        if (number % 2 === 0) {
+            console.log(number, " jämt");
+        } else {
+            console.log(number, " udda");
+        } 
+    });
+}
 
 function uppg9 (){
     // skapa en funktion som heter sort och tar in en array av siffror som argument
@@ -8,7 +16,9 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
-  
+    let numbers = [1, 2, 3, 4]
+    
+    sort(numbers);
 }
 
 module.exports = { uppg9 };
